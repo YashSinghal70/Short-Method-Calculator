@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+        <!-- Icon -->
+    <link rel="icon" type="image" href="calculator.png" />
+</head>
+<body>
+    
+<div class="container">
+
+    <!-- <div class="screen"><input type="text" id="input" placeholder="input"></div> -->
+
+<!-- <div class="inner-container"> -->
+
+<form >
+
+<div class="screen"><input type="text" id="input"  readonly></div>
+
+
+<div class="row1">
+<input type="button" id="clear" value="AC" onclick="form.input.value =''" >
+<input type="button" id="clear" value="DEL" onclick="form.input.value =form.input.value.slice(0,-1)" >
+
+<!-- <input type="button" onlclick="Deleted()" id="delete" value="DEL"  > -->
+
+<input type="button" id="percent" value="%" onclick="form.input.value +='%'" >
+<input type="button" id="divide" value="/" onclick="form.input.value +='/'" >
+</div>
+
+<div class="row2">
+   <input type="button" id="seven"  value="7" onclick="form.input.value +=7">
+    <input type="button" id="eight"  value="8" onclick="form.input.value +=8">
+   <input type="button" id="nine"  value="9" onclick="form.input.value +=9">
+    <input type="button" id="mul"  value="*" onclick="form.input.value +='*'">
+</div>
+
+<div class="row3">
+ <input type="button" id="four"  value="4" onclick="form.input.value +=4">
+    <input type="button" id="five"  value="5" onclick="form.input.value +=5">
+ <input type="button" id="six"  value="6" onclick="form.input.value +=6">
+    <input type="button" id="sub"  value="-" onclick="form.input.value +='-'">
+</div>
+
+<div class="row4">
+    <input type="button" id="one"  value="1" onclick="form.input.value +=1">
+    <input type="button" id="two"  value="2" onclick="form.input.value +=2">
+      <input type="button" id="three"  value="3" onclick="form.input.value +=3">
+    <input type="button" id="add"  value="+" onclick="form.input.value +='+'">
+</div>
+
+<div class="row5">
+    <input type="button" id="zero"  value="0" onclick="form.input.value +=0">
+    <input type="button" id="dot"  value="." onclick="form.input.value +='.'">
+      <input type="button" id="equal"  value="=" onclick="form.input.value =eval(form.input.value)">
+</div>
+
+
+</form>
+
+</div>
+
+    <script>
+       
+// function Deleted(){
+//    document.querySelector("#delete").substring(0,2);
+//    console.log("hello")
+//    console.log(  document.querySelector("#delete").slice(0,-1))
+// }
+    </script>
+</body>
+</html>
